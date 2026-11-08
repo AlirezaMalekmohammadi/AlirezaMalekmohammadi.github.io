@@ -4,7 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Projects · Alireza Malekmohammadi</title>
+  <meta name="description" content="Dr.-Ing. Alireza Malekmohammadi, postdoctoral researcher in Brain Networks at the Max Planck Institute for Human Cognitive and Brain Sciences, Leipzig.">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.4/css/academicons.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
   <link rel="stylesheet" href="assets/style.css">
   <script src="assets/main.js"></script>
@@ -12,11 +14,12 @@
 <body>
 <header>
   <nav class="nav">
-    <a class="brand" href="index.html"><b>Alireza</b> Malekmohammadi</a>
+    <a class="brand" href="index.html">Dr.-Ing. <b>Alireza</b> Malekmohammadi</a>
     <div class="links">
       <a href="index.html">about</a>
       <a href="publications.html">publications</a>
       <a href="projects.html" class="active">projects</a>
+      <a href="teaching.html">teaching</a>
       <a href="cv.html">CV</a>
       <button id="theme" title="Dark / light mode">☾</button>
     </div>
@@ -25,50 +28,74 @@
 
 <main>
   <h1>projects</h1>
-  <p class="subtitle">A selection of my research and side projects.</p>
+  <p class="subtitle">Research projects from Leipzig, Munich, Washington, Tübingen and Tehran.</p>
 
-  <!-- ✏️ HOW TO ADD A PROJECT:
-       1. Upload a picture to the folder assets/projects/
-       2. Copy one <a class="card"> ... </a> block below and paste it inside the grid
-       3. Change: href (link: GitHub, PDF, poster…), the picture name, the title and the text -->
+  <!-- ✏️ HOW TO ADD A PROJECT: copy one <a class="card"> ... </a> block and change the text.
+       Link: put an address after href= (paper, GitHub, poster…).
+       Colors: c1 … c6.  Icons: any name from fontawesome.com/icons
+       Want a photo instead? Replace the <div class="cover …">…</div> line with:
+       <img src="assets/my-picture.jpg" alt="">  -->
 
   <div class="grid">
-
-    <a class="card" href="#">
-      <img src="assets/projects/project1.jpg" alt="">
+    <a class="card" href="https://www.cbs.mpg.de/methoden-und-entwicklungsgruppen/brain-networks">
+      <div class="cover c1"><i class="fa-solid fa-magnet"></i></div>
       <div class="body">
-        <h3>Project One</h3>
-        <p>One or two sentences describing what this project is about.</p>
+        <div class="where">MPI CBS · since 2026</div>
+        <h3>TMS of the Human Motor Cortex</h3>
+        <p>How transcranial magnetic stimulation acts on the motor cortex, studied with advanced electrophysiology and biophysical modeling.</p>
       </div>
     </a>
-
-    <a class="card" href="#">
-      <img src="assets/projects/project2.jpg" alt="">
+    <a class="card" href="https://www.nature.com/articles/s41598-025-12135-y">
+      <div class="cover c2"><i class="fa-solid fa-wave-square"></i></div>
       <div class="body">
-        <h3>Project Two</h3>
-        <p>A short description, e.g. the method, the data, or the result.</p>
+        <div class="where">TUM · 2020–2026</div>
+        <h3>Brain Sound Computer Interface</h3>
+        <p>Decoding sound and speech sequences from the human brain (EEG) with machine and deep learning.</p>
       </div>
     </a>
-
-    <a class="card" href="#">
-      <img src="assets/projects/project3.jpg" alt="">
+    <a class="card" href="publications.html">
+      <div class="cover c5"><i class="fa-solid fa-music"></i></div>
       <div class="body">
-        <h3>Project Three</h3>
-        <p>Link the card to a GitHub repo, a paper, a poster or a video.</p>
+        <div class="where">TUM · 2020–2026</div>
+        <h3>Music &amp; Audiobook Familiarity</h3>
+        <p>Theta, gamma and alpha dynamics in the brain while unfamiliar music and audiobooks become familiar.</p>
       </div>
     </a>
-
     <a class="card" href="#">
-      <img src="assets/projects/project4.jpg" alt="">
+      <div class="cover c4"><i class="fa-solid fa-brain"></i></div>
       <div class="body">
-        <h3>Project with a Longer Name</h3>
-        <p>Cards arrange themselves automatically: 3 per row on a laptop, 1 on a phone.</p>
+        <div class="where">Georgetown University · 2020, 2023</div>
+        <h3>Music Perception in the Primate Brain</h3>
+        <p>Research internships studying familiarity and music perception in the monkey brain during passive listening.</p>
       </div>
     </a>
-
+    <a class="card" href="#">
+      <div class="cover c3"><i class="fa-solid fa-bolt"></i></div>
+      <div class="body">
+        <div class="where">University of Tübingen · 2017–2018</div>
+        <h3>Deep Brain Stimulation in Parkinson’s</h3>
+        <p>Effects of intra-operative deep brain stimulation of the subthalamic nucleus on cortical physiology.</p>
+      </div>
+    </a>
+    <a class="card" href="publications.html">
+      <div class="cover c6"><i class="fa-solid fa-microchip"></i></div>
+      <div class="body">
+        <div class="where">Sharif University of Technology · 2013–2015</div>
+        <h3>FPGA Brain–Computer Interface</h3>
+        <p>Efficient hardware implementation of SVM, LDA, KNN and ANN for a motor-imagery BCI on a Virtex-6 FPGA.</p>
+      </div>
+    </a>
+    <a class="card" href="teaching.html">
+      <div class="cover c2"><i class="fa-solid fa-people-group"></i></div>
+      <div class="body">
+        <div class="where">TUM × Georgetown · 2023–2025</div>
+        <h3>Neuroengineering Summer School</h3>
+        <p>Co-organizer of three TUM–Georgetown Neuroengineering Summer Schools in Washington, DC and Munich.</p>
+      </div>
+    </a>
   </div>
 </main>
 
-<footer>© 2026 Alireza Malekmohammadi</footer>
+<footer>© 2026 Alireza Malekmohammadi · Last updated November 2026</footer>
 </body>
 </html>
